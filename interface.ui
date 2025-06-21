@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #f0f0f0;
+    font-family: &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+
+QFrame#frameInventario, QFrame#frameConsulta {
+    background-color: #cce7ff;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #90c7ff;
+}
+
+QPushButton {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #084ec4;
+}
+
+QLabel#tituloPrincipal {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0a3d62;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+    background-color: #f0f0f0;
+    font-family: &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+
+QFrame#frameInventario, QFrame#frameConsulta {
+    background-color: #cce7ff;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #90c7ff;
+}
+
+QPushButton {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #084ec4;
+}
+
+QLabel#tituloPrincipal {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0a3d62;
+}
+</string>
+    </property>
+    <widget class="QLabel" name="tituloPrincipal">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>10</y>
+       <width>561</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI,Tahoma,Geneva,Verdana,sans-serif</family>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>RASTREAMENTO / INVENTÁRIO DE PRODUTOS</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnConsultar">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>70</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CONSULTAR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnInventario">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>70</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>INVENTÁRIO</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frameConsulta">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>130</y>
+       <width>700</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <widget class="QLabel" name="lerLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>10</y>
+        <width>230</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI,Tahoma,Geneva,Verdana,sans-serif</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>LER ETIQUETA DE ENDEREÇO:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnLerEtiqueta_2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(255, 255, 255)</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Img/simbolo-de-interface-de-camera-fotografica-para-botao.png</normaloff>Img/simbolo-de-interface-de-camera-fotografica-para-botao.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelProduto">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>50</y>
+        <width>230</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI,Tahoma,Geneva,Verdana,sans-serif</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>LER ETIQUETA DE PRODUTO:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="lerProduto">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>50</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(255, 255, 255)</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>Img/simbolo-de-interface-de-camera-fotografica-para-botao.png</normaloff>Img/simbolo-de-interface-de-camera-fotografica-para-botao.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="qtdLabel">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>10</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>QUANTIDADE:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="numQtd">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>11</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnExeConsulta">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>50</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CONSULTAR</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnInventariar">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>50</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>INVENTARIAR</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>100</y>
+        <width>481</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI,Tahoma,Geneva,Verdana,sans-serif</family>
+       </font>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
